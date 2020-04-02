@@ -113,5 +113,7 @@ Decidim.register_component(:budgets) do |component|
       )
       Decidim::Comments::Seed.comments_for(project)
     end
+
+    component
   end
 end
