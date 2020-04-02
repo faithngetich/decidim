@@ -9,6 +9,8 @@ Decidim.register_component(:budgets) do |component|
   component.stylesheet = "decidim/budgets/budgets"
   component.permissions_class_name = "Decidim::Budgets::Permissions"
 
+  component.allow_parent = true
+
   component.data_portable_entities = ["Decidim::Budgets::Order"]
 
   component.newsletter_participant_entities = ["Decidim::Budgets::Order"]
