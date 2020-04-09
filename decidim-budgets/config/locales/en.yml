@@ -63,14 +63,18 @@ en:
           delete: "%{user_name} deleted the %{resource_name} project in the %{space_name} space"
           update: "%{user_name} updated the %{resource_name} project in the %{space_name} space"
       groups:
+        projects:
+          index:
+            back_to: "Back to %{parent_name}"
         admin:
           budgets:
             index:
+              add: Add Budget Component
               headers:
                 actions: Actions
                 name: Component name
                 type: Component type
-              title: Budgets
+              title: Budgets Group
       models:
         project:
           fields:
@@ -160,6 +164,8 @@ en:
         settings:
           global:
             announcement: Announcement
+            description: Description
+            title: Title
           step:
             announcement: Announcement
     orders:
